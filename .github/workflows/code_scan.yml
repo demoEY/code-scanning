@@ -27,7 +27,7 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           config: |
-                  disable-default-queries: false
+                  disable-default-queries: true
                   queries:
                     - uses: security-extended
                     - uses: security-and-quality
