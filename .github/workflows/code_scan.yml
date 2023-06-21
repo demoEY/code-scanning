@@ -26,6 +26,7 @@ jobs:
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
+          debug: true
           config: |
                   disable-default-queries: true
                   queries:
