@@ -15,4 +15,6 @@ def process_request(request):
     dk = hashlib.pbkdf2_hmac('sha256', password, salt, 100000)
     hashed_input = binascii.hexlify(dk)
     if hashed_input == hashed_password:
+
+        
         redirect("login")
